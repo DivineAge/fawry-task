@@ -3,7 +3,7 @@ public class CartItem {
     private final int quantity;
 
     public CartItem(Product product, int quantity) {
-        if (quantity <= 0) throw new IllegalArgumentException("Quantity must be > 0");
+        if (quantity <= 0) throw new IllegalArgumentException("Quantity must be more than 0");
         if (!product.isInStock(quantity)) throw new IllegalArgumentException("Not enough stock");
 
         if (product instanceof IExpirable expirable && expirable.isExpired()) {
