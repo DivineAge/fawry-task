@@ -13,7 +13,7 @@ public class main {
         customer.getCart().addItem(cheese, 2);   // 2x Cheese = 200
         customer.getCart().addItem(biscuits, 1); // 1x Biscuits = 150
 
-        /
+        
         CheckoutService.checkout(customer);
     }
 }
