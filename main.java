@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         // Customer setup
         Customer customer = new Customer(1, "Yussuf", "Cairo", "0100-1234567", 1000);
